@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reden Jhon Robles – Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+           
+            colors: {
+              paper: "cornflowerblue" /* page background */,
+              ink: "midnightblue" /* main text */,
+              muted: "navy" /* softer text */,
+              accent: "white" /* hover color */,
+              line: "white" /* divider lines */,
+            },
+            fontFamily: {
+              head: ['"Bricolage Grotesque"', '"Segoe UI"', "sans-serif"],
+              body: ['"Instrument Sans"', '"Segoe UI"', "Arial", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-paper text-ink font-body text-[17px] leading-relaxed">
+    <!-- HEADER -->
+    <header
+      class="sticky top-0 z-10 flex items-center justify-between border-b border-line bg-paper px-5 py-4 sm:px-10"
+    >
+      <a href="#about" class="font-head text-xl font-extrabold"
+        >Reden Jhon Robles</a
+      >
+      <nav class="flex gap-4 font-medium sm:gap-6" aria-label="Main">
+        <a href="#about" class="hover:text-accent">About me</a>
+        <a href="#skills" class="hover:text-accent">Skills</a>
+        <a href="#projects" class="hover:text-accent">Projects</a>
+        <a href="#contact" class="hover:text-accent">Contact</a>
+      </nav>
+    </header>
+
+    <main class="mx-auto max-w-5xl px-5 sm:px-10">
+      <!-- ABOUT ME: -->
+      <section
+        id="about"
+        class="grid scroll-mt-20 items-center gap-10 py-14 md:grid-cols-[1.3fr_1fr] md:py-24"
+      >
+        <div>
+          <h1
+            class="mb-6 font-head text-5xl font-extrabold tracking-tight sm:text-7xl"
+          >
+            About me
+          </h1>
+          <p class="mb-5 max-w-[52ch] text-xl">
+            Hi, I'm Reden Jhon, a BSIT student who wants to learn more about web
+            development and pursue my career as a programmer.
+          </p>
+        </div>
+
+        <img
+          src="me.jfif"
+          alt="Portrait of Reden Jhon Robles"
+          width="480"
+          height="600"
+          class="order-first mx-auto aspect-[4/5] w-full max-w-xs rounded-2xl bg-white object-cover md:order-none md:max-w-none"
+        />
+      </section>
+
+      <!-- SKILLS -->
+      <section
+        id="skills"
+        class="scroll-mt-20 border-t border-line py-16 md:py-20"
+      >
+        <h2
+          class="mb-8 font-head text-3xl font-extrabold tracking-tight sm:text-4xl"
+        >
+          Skills
+        </h2>
+
+        <ul
+          class="grid max-w-xl grid-flow-col grid-cols-2 grid-rows-3 justify-items-start gap-3"
+        >
+          <li class="rounded-full border-2 border-ink px-5 py-2 font-medium">
+            basic html
+          </li>
+          <li class="rounded-full border-2 border-ink px-5 py-2 font-medium">
+            basic css
+          </li>
+          <li class="rounded-full border-2 border-ink px-5 py-2 font-medium">
+            Tailwind CSS
+          </li>
+          <li class="rounded-full border-2 border-ink px-5 py-2 font-medium">
+            basic networking
+          </li>
+          <li class="rounded-full border-2 border-ink px-5 py-2 font-medium">
+            pc assembly and disassembly
+          </li>
+          <li class="rounded-full border-2 border-ink px-5 py-2 font-medium">
+            Problem solving
+          </li>
+        </ul>
+      </section>
+
+      <!-- PROJECTS: -->
+      <section
+        id="projects"
+        class="scroll-mt-20 border-t border-line py-16 md:py-20"
+      >
+        <h2
+          class="mb-8 font-head text-3xl font-extrabold tracking-tight sm:text-4xl"
+        >
+          Projects
+        </h2>
+
+        <div class="grid gap-6 md:grid-cols-2">
+          <figure>
+            <video
+              controls
+              preload="metadata"
+              playsinline
+              class="aspect-video w-full rounded-xl bg-ink"
+            >
+              <source src="video.mp4" type="video/mp4" />
+            </video>
+          </figure>
+
+          <figure>
+            <img
+              src="portcode.jfif"
+              alt="Screenshot of my project"
+              class="aspect-video w-full rounded-xl bg-white object-cover"
+            />
+            <figcaption class="mt-3 text-sm">
+              A picture of myportfolio project. It is a simple website that I
+              created using HTML and Tailwind CSS.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- CONTACT: -->
+      <section
+        id="contact"
+        class="scroll-mt-20 border-t border-line py-16 md:py-20"
+      >
+        <h2
+          class="mb-6 font-head text-3xl font-extrabold tracking-tight sm:text-4xl"
+        >
+          Contact
+        </h2>
+        <p class="mb-6 max-w-[46ch]">contact me here</p>
+
+        <ul class="flex flex-wrap gap-4">
+          <li>
+            <a
+              href="https://mail.google.com/mail/?view=cm&to=roblesredenjhon@gmail.com"
+              target="_blank"
+              rel="noopener"
+              class="inline-flex items-center gap-2 rounded-full border-2 border-ink px-6 py-3 font-semibold transition hover:bg-ink hover:text-white"
+            >
+              <span aria-hidden="true" class="font-head font-extrabold">✉</span>
+              Gmail
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/redenrobles"
+              target="_blank"
+              rel="noopener"
+              class="inline-flex items-center gap-2 rounded-full border-2 border-ink px-6 py-3 font-semibold transition hover:bg-ink hover:text-white"
+            >
+              <span aria-hidden="true" class="font-head font-extrabold">f</span>
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a
+              href="tel:+639562859022"
+              class="inline-flex items-center gap-2 rounded-full border-2 border-ink px-6 py-3 font-semibold transition hover:bg-ink hover:text-white"
+            >
+              <span aria-hidden="true" class="font-head font-extrabold">☎</span>
+              +63 956 285 9022
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-line px-5 py-8 text-sm sm:px-10">
+      <p>© 2026 Reden Jhon Robles</p>
+    </footer>
+  </body>
+</html>
